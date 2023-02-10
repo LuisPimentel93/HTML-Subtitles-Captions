@@ -19,14 +19,22 @@
             <!-- TODO: Put the dog video here. Set the width to 400 pixels and include controls -->
             <iframe src="./assets/videos/dog-video.mp4" frameborder="400px"></iframe>
             <!-- Include a track tag with the src attribute set to "dog-video.vtt" -->
-            <video control >
+            <video controls>
+                <source src="assets/videos/dog-video.mp4">
+                <track 
+                    src="VTT_FILE_HERE"
+                    kind="captions"
+                    srclang="English"
+                    label="English Captions" />
+            </video>
+            
+            <video control>
             <source src="./assets/videos/dog-video.mp4">
             <track
                 src="./assets/text-tracks/dog-video.vtt"
                 kind="captions"
                 srclang="English"
-                label="english Captions"
-                />
+                label="english Captions"/>
         </video>
         </div>
         <div>
